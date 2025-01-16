@@ -1,0 +1,95 @@
+/*declaration of variables */
+:root{
+    --background-color: #BFB78F;
+    --border-radius : .25rem;
+    --letter-spacing : .25rem;
+    --transition: all 3s linear;
+    --font-size: 1.2rem;
+    --title-font-size:1.5rem;
+    --text-color:#DEEFE7;
+    --section-box-background : #002333;
+    --box-shadow:  0 7px 18px #F28705;
+    --button-color: #F24405;
+    --button-hover-color: #F28705;
+    --max-width: 1170px;
+
+}
+
+/*styling the body */
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titles h2{
+    font-size: var(--title-font-size);
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: var(--letter-spacing);
+}
+.game-container{
+  width:80%;
+  height:60vh;
+  max-width: var(--max-width);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--section-box-background);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  align-items: center;
+  color: var(--text-color);
+  transition: all .5s linear;
+}
+
+.score-board{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.score-board span{
+    font-size: var(--font-size);
+    margin-left:.9rem;
+    font-weight: bold;
+}
+.score-item{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+   width: 50vw;
+}
+.btn{
+    font-size:1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all .5s linear;
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+.btn:hover{
+    background-color: var(--button-hover-color);
+    transform: scale(1.1);
+}
+.result-message{
+    font-size: var(--font-size);
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
